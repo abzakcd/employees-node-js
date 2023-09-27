@@ -1,0 +1,88 @@
+/* Reset some default styles to provide a consistent base */
+body,
+h1,
+label,
+table {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the body, set a background color, and center content */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the main heading */
+h1 {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Style the select dropdown */
+label,
+select {
+    display: block;
+    margin: 10px auto;
+}
+
+/* Style the table */
+table {
+    background-color: white;
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Style table headers */
+thead th {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style table cells */
+tbody td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+/* Style the list button */
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px auto;
+}
+
+/* Add hover effect to the button */
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* סגנון לכל התגי input מסוג datetime-local */
+input[type="datetime-local"] {
+    padding: 8px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+/* עיצוב לתג label */
+label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+}

@@ -1,0 +1,37 @@
+<%- include("page_top.ejs") %>
+
+<main>
+    <h1>
+        הוספת עובד
+    </h1>
+    <br><br>
+    <form action="/employees/Add" method="post">
+        <input type="text" name="FirstName" id="FirstName" placeholder="FirstName"> <br><br>
+        <input type="text" name="LastName" id="LastName" placeholder="LastName"> <br><br>
+        <button type="submit"  onclick="addNewLine()">send</button>
+    </form>
+
+
+    <table>
+        <thead>
+        <tr>
+            <th>עריכה</th>
+            <th>שם</th>
+            <th>משפחה</th>
+            <th>מחיקה</th>
+        </tr>
+        </thead>
+        <tbody id="mainTable">  </tbody>
+    </table>
+
+    <button onclick="getList()">list</button>
+
+    <br><br><br>
+
+    <%- include("links.ejs") %>
+
+
+</main>
+<script src="/employees.js"></script>
+
+<%- include("page_bottom.ejs") %>
