@@ -1,0 +1,37 @@
+<%- include("page_top.ejs") %>
+
+<main>
+    <h1>
+        שעות עבודה
+    </h1>
+    <br><br>
+
+        <label for="employeeSelect">בחר עובד:</label>
+        <select id="employeeSelect" name="employeeID">
+            <!-- הוסף אפשרויות לעובדים נוספים -->
+        </select><br><br>
+    <button onclick="listEp()">בחירה עובד</button>
+    <button onclick="listmain()">כל שעות העבודה</button>
+
+    <table>
+        <thead>
+        <tr>
+            <th>ימים</th>
+            <th>שם מלא</th>
+            <th>התחלה</th>
+            <th>סיום</th>
+        </tr>
+        </thead>
+        <tbody id="mainTable"></tbody>
+    </table>
+    <h3 id="sumdays"></h3>
+
+
+    <br><br><br>
+
+    <%- include("links.ejs") %>
+
+</main>
+<script src="/employee_time.js"></script>
+
+<%- include("page_bottom.ejs") %>
