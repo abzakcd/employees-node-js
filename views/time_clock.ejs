@@ -1,0 +1,32 @@
+<%- include("page_top.ejs") %>
+
+<main>
+    <h1>
+        שעון נוכחות
+    </h1>
+    <br><br>
+
+    <form action="/time_clock/Add" method="post">
+
+        <label for="employeeSelect">בחר עובד:</label>
+        <select id="employeeSelect" name="employeeID">
+            <!-- הוסף אפשרויות לעובדים נוספים -->
+        </select><br><br>
+
+        <label for="entryTime">זמן כניסה:</label>
+        <input type="datetime-local" id="entryTime" name="entryTime"><br><br>
+
+        <label for="exitTime">זמן יציאה:</label>
+        <input type="datetime-local" id="exitTime" name="exitTime"><br><br>
+
+        <input type="submit" value="שמור דיווח">
+    </form>
+
+    <br><br><br>
+
+    <%- include("links.ejs") %>
+
+</main>
+<script src="/time_clock.js"></script>
+
+<%- include("page_bottom.ejs") %>
